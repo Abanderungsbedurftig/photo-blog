@@ -1,0 +1,31 @@
+{
+    "port": 8000,
+    "mongoose": {
+        "uri": "[mongodb_url]",
+        "options": {
+            "keepAlive": true,
+            "useNewUrlParser": true,
+            "useCreateIndex" : true
+        }
+    },
+    "url": "http://localhost:8000",
+    "client": "http://localhost:3000",
+    "gmail": {
+        "user": "[gmail_address]",
+        "password": "[password]"
+    },
+    "session": {
+        "secret": "[secret]",
+        "key": "sid"
+    },
+    "authProviders": {
+        "facebook": {
+            "appId": "[facebook_app_id]",
+            "appSecret": "[facebook_app_secret]"
+        },
+        "google": {
+            "clientID": "[google_client_id]",
+            "clientSecret": "[google_client_secret]"
+        }
+    }
+}

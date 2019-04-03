@@ -1,0 +1,108 @@
+.loader-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 10000;
+}
+.loader-block{
+    position: absolute;
+    width: 600px;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -300px;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0,0,0,.5);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#loading-image{
+    width: 480px;
+    height: 480px;
+    margin-top: 7px;
+    border: 4px solid rgba(80,80,80,.3);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-item{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#send-photo-btn, #file-upload{
+    width: 200px;
+    height: 36px;
+    background-color: rgb(0,134,179);
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all 0.4s ease; 
+}
+#send-photo-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 36px;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+#file-upload{
+    position: relative;
+    margin: 7px auto;
+}
+#file-upload label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+#file-upload:hover, #send-photo-btn:hover{
+    background-color: rgb(0,153,204); 
+}
+#file-upload:active, #send-photo-btn:active{
+    box-shadow: none;
+    font-size: 17px;
+}
+#file-upload input[type="file"]{
+    display: none; 
+}
+#loading-form{
+    margin-top: -36px;
+}
+textarea.caption-text{
+    width: 480px;
+    min-width: 480px;
+    max-width: 480px;
+    height: 82px;
+    min-height: 82px;
+    max-height: 82px;
+    background-color: rgba(0,0,0,.1);
+    border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    outline: none; 
+}
+textarea.caption-text:focus{
+    background-color: rgba(0,0,0,0);
+}

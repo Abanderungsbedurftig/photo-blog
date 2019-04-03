@@ -1,0 +1,73 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,.8);
+    border-bottom: 1px solid rgb(180, 180, 180);
+    box-shadow: 0 0 2px rgba(0,0,0,.3);
+    z-index: 1000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 1000 ease;
+}
+.user-photo{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.account{
+    width: 50%;
+    text-align: right;
+}
+.account span{
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+}
+span.logout{
+    color: rgb(0,134,179);
+    cursor: pointer;
+}
+span.logout:hover{
+    color: rgb(0,153,204); 
+}
+.header-max{
+    height: 80px;
+    line-height: 80px;
+}
+.header-min{
+    height: 50px;
+    line-height: 50px;
+}
+.menu-btn{
+    width: 68px;
+    height: 52px;
+    margin-left: 10px;
+    background-color: rgb(0,134,179);
+    color: white;
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+    border: none;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none !important;
+    transition: all 0.4s ease;  
+}
+.menu-btn:hover{
+    background-color: rgb(0,153,204); 
+}
+.menu-btn:active{
+    box-shadow: none;
+}
+.menu-btn:active img{
+    width: 42px;
+}
+span#account-username{
+    color: rgb(60,60,60);
+    cursor: pointer;
+}

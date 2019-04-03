@@ -1,0 +1,143 @@
+.item{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 10000;
+}
+.item-block{
+    position: relative;
+    width: 1160px;
+    height: calc(100% - 40px);
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0,0,0,.5);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.item-photo{
+    width: 600px;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item-comments{
+    width: 500px;
+    height: calc(100% - 40px); 
+    border-left: 1px solid rgb(170, 170, 170);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.close-item{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close-item:hover{
+    color: rgb(0,134,179);
+}
+span.item-description{
+    line-height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+.description{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: rgba(80,80,80,.1);
+}
+.description-user-photo{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.item-img{
+    width: 48px;
+    height: 48px;
+    margin: 6px;
+    border-radius: 24px;
+    overflow: hidden;
+} 
+.item-img img{
+    object-fit: cover;
+    width: 100%;
+}
+.description-username{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 6px;
+}
+.item-likes{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    line-height: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(100,100,100); 
+}
+.item-likes span{
+    margin-left: 20px;
+}
+.heart{
+    position: relative;
+    margin-left: 14px;
+    margin-top: 3px;
+    width: 12px;
+    height: 21px;
+    background-color: white;
+    cursor: pointer;
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0px 0px 0px 2px rgb(100,100,100);
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+.red-heart{
+    background-color: red;
+    box-shadow: 0px 0px 0px 2px red;
+}
+.heart.red-heart:before{
+    background-color: red;
+    box-shadow: 0px 0px 0px 2px red;
+}
+  .heart:before{
+    position: absolute;
+    width: 21px;
+    height: 12px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: white;
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0px 0px 0px 2px rgb(100,100,100);
+  }
+.item-date{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(100,100,100); 
+}

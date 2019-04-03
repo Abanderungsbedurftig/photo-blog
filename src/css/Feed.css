@@ -1,0 +1,7 @@
+.feed{
+    position: relative;
+    z-index: 100;
+    width: 532px;
+    margin: 0 auto;
+    margin-top: 80px;
+}

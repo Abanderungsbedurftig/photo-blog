@@ -1,0 +1,21 @@
+.error-404{
+    position: absolute;
+    width: 700px;
+    top: 50%;
+    margin-top: -240px;
+    left: 50%;
+    margin-left: -350px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.error-404 h1{
+    margin-bottom: 10px;
+    font-size: 114px;
+    font-weight: bold;
+    color: rgb(0,134,179);
+}
+.error-404 p{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(130,130,130);
+}

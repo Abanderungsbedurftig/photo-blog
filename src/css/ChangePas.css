@@ -1,0 +1,109 @@
+.change-form{
+    position: absolute;
+    width: 500px;
+    height: 240px;
+    top: 50%;
+    margin-top: -140px;
+    left: 50%;
+    margin-left: -250px;
+    border-radius: 3px;
+    background-color: rgb(208,208,208);
+    box-shadow: 0 0 10px rgba(0,0,0,.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.change-form form{
+    width: 500px;
+    height: 160px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+}
+.item-form{
+    width: 400px;
+    height: 52px;
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    outline: none;
+}
+.input-form{
+    box-sizing: border-box;
+    padding-left: 16px;
+    background-color: rgba(255,255,255,.8);
+}
+.input-form:focus{
+    background-color: white;
+}
+.input-form::-moz-placeholder{
+   opacity: 1;
+   transition: opacity 0.4s ease;
+}
+.input-form:-moz-placeholder{
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+.input-form:-ms-input-placeholder{
+    opacity: 1;
+    transition: opacity 0.4s ease; 
+}
+.input-form::-webkit-input-placeholder{
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+.input-form:focus::-moz-placeholder{
+    opacity: 0;
+}
+.input-form:focus:-moz-placeholder{
+    opacity: 0;
+}
+.input-form:focus:-ms-input-placeholder{
+    opacity: 0;
+}
+.input-form:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+.btn-form{
+    background-color: rgb(0,134,179);
+    color: white;
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: all 0.4s ease; 
+}
+.btn-form:hover{
+    background-color: rgb(0,153,204); 
+}
+.btn-form:active{
+    box-shadow: none;
+    font-size: 17px;
+}
+.error{
+    border: 1px solid red;
+}
+.change-message{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    margin-top: -50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+.auth-link{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: rgb(0,134,179);
+    text-decoration: none;
+}
+.auth-link:hover{
+    color: rgb(0,153,204); 
+}

@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+# production
+/public/*
+!public/index.html
+
+/server/public/*
+!server/public/index.html
+server/config/config.json
+
+npm-debug.log*
