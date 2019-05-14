@@ -1,4 +1,4 @@
-##### Simple photo blog on React/Node.js
+## Simple photo blog on React/Node.js
 -----------
 This project is a simple example of implementing a photo blog. Implemented the ability to add photos, personal avatar, comments on photos and put likes. In addition, there are registration and authentication forms, as well as the ability to authenticate via Google and Facebook.
 
